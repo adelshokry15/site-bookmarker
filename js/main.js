@@ -63,7 +63,7 @@ function deleteP(i) {
   localStorage.setItem("list", JSON.stringify(list));
 }
 function validateName(value) {
-  var regex = new RegExp("\\S{3,}", "gi");
+  var regex = new RegExp("^\\w{3,}", "gi");
   if (regex.test(value)) {
     console.log("hi");
     siteName.classList.add("is-valid");
